@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校園二手物品交換平台</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            font-size: 1.5em;
+        }
+        nav {
+            text-align: center;
+            margin: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            color: #4CAF50;
+        }
+        form input, form select, form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+        .item-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .item-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 標題區域 -->
+    <header>
+        校園二手物品交換平台
+    </header>
+
+    <!-- 功能導覽列 -->
+    <nav>
+        <a href="#list">物品列表</a>
+        <a href="#post">上架物品</a>
+        <a href="#search">搜索分類</a>
+    </nav>
+
+    <!-- 物品展示區 -->
+    <section id="list">
+        <h2>物品列表</h2>
+        <!-- 假資料卡片 -->
+        <div class="item-card">
+            <img src="https://www.tecnobytemx.com/cdn/shop/files/A19903_39e7ad13-5901-4205-9e64-f356d8dc45e2.png?v=1722363975&width=1406" alt="物品圖片">
+            <div>
+                <strong>二手筆記型電腦</strong>
+                <p>價格：$5000</p>
+                <p>描述：七成新，功能正常，適合學生使用。</p>
+            </div>
+        </div>
+        <div class="item-card">
+            <img src="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/036/04/0010360466.jpg&v=62d695bak&w=375&h=375" alt="物品圖片">
+            <div>
+                <strong>C語言課本</strong>
+                <p>價格：$300</p>
+                <p>描述：無筆記，保存良好。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 上架物品區 -->
+    <section id="post">
+        <h2>上架物品</h2>
+        <form>
+            <input type="text" placeholder="物品名稱" required>
+            <input type="text" placeholder="價格" required>
+            <input type="text" placeholder="描述" required>
+            <select>
+                <option>選擇分類</option>
+                <option>電子產品</option>
+                <option>課本/書籍</option>
+                <option>生活用品</option>
+                <option>其他</option>
+            </select>
+            <button type="submit">上架</button>
+        </form>
+    </section>
+
+    <!-- 搜索分類區 -->
+    <section id="search">
+        <h2>搜索分類</h2>
+        <form>
+            <input type="text" placeholder="輸入關鍵字">
+            <select>
+                <option>選擇分類</option>
+                <option>電子產品</option>
+                <option>課本/書籍</option>
+                <option>生活用品</option>
+                <option>其他</option>
+            </select>
+            <button type="submit">搜索</button>
+        </form>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        校園二手交換平台 © 2024
+    </footer>
+</body>
+</html>
